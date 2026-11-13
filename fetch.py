@@ -24,6 +24,8 @@ import aiohttp
 from bs4 import BeautifulSoup
 
 # name -> (base url, output files)
+# Manifests are written straight into public/ so Vite ships them as static
+PUBLIC = Path("public")
 MIRRORS = {
     "tuna": (
         "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/",
@@ -272,9 +274,10 @@ async def main():
                     print(f"      ... and {len(skipped) - 10} more")
 
             body = json.dumps(payload, indent=2) + "\n"
+            PUBLIC.mkdir(exist_ok=True)
             for out in out_files:
-                Path(out).write_text(body, encoding="utf-8")
-            print(f"--- {key}: {len(payload)} entries -> {', '.join(out_files)}")
+                (PUBLIC / out).write_text(body, encoding="utf-8")
+            print(f"--- {key}: {len(payload)} entries -> {', '.join('public/' + o for o in out_files)}")
 
     if failed:
         raise SystemExit(f"\n=== Incomplete. Mirrors failed: {', '.join(failed)} ===")
