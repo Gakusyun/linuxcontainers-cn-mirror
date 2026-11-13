@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 """
-Crawls https://images.linuxcontainers.org/images/ and generates rootfs.json
+Crawls the LXC images index on Chinese mirrors and generates rootfs manifests
 with direct download URLs. No tarballs downloaded.
+
+Mirrors:
+  NJU  https://mirror.nju.edu.cn/lxc-images/images/
+  TUNA https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/
+
+TUNA syncs ahead of NJU (NJU usually lags ~1 day), so TUNA is the default:
+  tuna-rootfs.json  index served by TUNA
+  rootfs.json       alias of tuna-rootfs.json (byte-identical copy)
+  nju-rootfs.json   index served by NJU
 """
 
 import asyncio
@@ -14,8 +23,17 @@ from urllib.parse import urljoin, unquote
 import aiohttp
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://images.linuxcontainers.org/images/"
-JSON_OUT = Path("rootfs.json")
+# name -> (base url, output files)
+MIRRORS = {
+    "tuna": (
+        "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/",
+        ["tuna-rootfs.json", "rootfs.json"],
+    ),
+    "nju": (
+        "https://mirror.nju.edu.cn/lxc-images/images/",
+        ["nju-rootfs.json"],
+    ),
+}
 
 DISTROS = {
     "almalinux", "alpine", "alt", "amazonlinux", "archlinux",
@@ -83,7 +101,10 @@ def links(html, base):
     out = []
     for a in soup.find_all("a", href=True):
         h = a["href"]
-        if h.startswith("?") or h == "../" or h.startswith("http"):
+        # Skip query links, parent, absolute site links (mirror chrome: css/js/logo)
+        # and fragments. Only relative links belong to the mirrored tree.
+        if (h.startswith("?") or h.startswith("#") or h.startswith("http")
+                or h.startswith("/") or h == "../"):
             continue
         out.append(urljoin(base, h))
     return out
@@ -91,11 +112,6 @@ def links(html, base):
 
 def dirname(url):
     return unquote(url.rstrip("/").split("/")[-1])
-
-
-def latest_dated(ls):
-    dated = [l for l in ls if DATED_RE.search(l)]
-    return sorted(dated)[-1] if dated else None
 
 
 async def sha256sums(session, snapshot_url):
@@ -128,26 +144,47 @@ async def head_size(session, url):
         return 0
 
 
+async def pick_snapshot(session, dated, max_back=6):
+    """Return (snapshot_url, snapshot_links) for the newest COMPLETE snapshot.
+
+    Mirrors create the dated directory as soon as upstream publishes, but the
+    files land a little later, so the newest snapshot is often an empty stub.
+    Walk backwards until a snapshot actually contains TARGET_FILE.
+    """
+    for snap in reversed(dated[-max_back:]):
+        try:
+            snap_links = links(await fetch(session, snap), snap)
+        except Exception:
+            continue
+        if any(l.endswith(TARGET_FILE) for l in snap_links):
+            return snap, snap_links
+    return None, None
+
+
 def make_name(distro, version, flavor):
     base = f"{DISTRO_NAMES.get(distro, distro.title())} {version}"
     return base if flavor == "default" else f"{base} ({flavor})"
 
 
-async def crawl_flavor(session, url, distro, version, arch, flavor, results):
+async def crawl_flavor(session, url, distro, version, arch, flavor, results, skipped):
     ls = links(await fetch(session, url), url)
-    latest = latest_dated(ls)
-    if not latest:
+    dated = sorted(l for l in ls if DATED_RE.search(l))
+    if not dated:
         return
 
-    snapshot = dirname(latest)
-    snap_links = links(await fetch(session, latest), latest)
+    latest, snap_links = await pick_snapshot(session, dated)
+    if not latest:
+        skipped.append(f"{distro}/{version}/{arch}/{flavor}")
+        return
+
     rootfs_url = next((l for l in snap_links if l.endswith(TARGET_FILE)), None)
     if not rootfs_url:
+        skipped.append(f"{distro}/{version}/{arch}/{flavor}")
         return
 
     sums = await sha256sums(session, latest)
     size = await head_size(session, rootfs_url)
-    build_date = snapshot.split("_")[0]
+    build_date = dirname(latest).split("_")[0]
     name = make_name(distro, version, flavor)
 
     results.append(Entry(
@@ -163,32 +200,47 @@ async def crawl_flavor(session, url, distro, version, arch, flavor, results):
     ))
 
 
-async def crawl_arch(session, url, distro, version, arch, results):
+async def crawl_arch(session, url, distro, version, arch, results, skipped):
     ls = links(await fetch(session, url), url)
     tasks = [
-        crawl_flavor(session, l, distro, version, arch, dirname(l), results)
+        crawl_flavor(session, l, distro, version, arch, dirname(l), results, skipped)
         for l in ls if l.endswith("/") and dirname(l) not in SKIP_FLAVORS
     ]
     await asyncio.gather(*tasks)
 
 
-async def crawl_version(session, url, distro, version, results):
+async def crawl_version(session, url, distro, version, results, skipped):
     ls = links(await fetch(session, url), url)
     tasks = [
-        crawl_arch(session, l, distro, version, ARCH_MAP[dirname(l)], results)
+        crawl_arch(session, l, distro, version, ARCH_MAP[dirname(l)], results, skipped)
         for l in ls if l.endswith("/") and dirname(l) in ARCH_MAP
     ]
     await asyncio.gather(*tasks)
 
 
-async def crawl_distro(session, distro, url, results):
+async def crawl_distro(session, distro, url, results, skipped):
     print(f"  Scanning {distro}...")
     ls = links(await fetch(session, url), url)
     tasks = [
-        crawl_version(session, l, distro, dirname(l), results)
+        crawl_version(session, l, distro, dirname(l), results, skipped)
         for l in ls if l.endswith("/")
     ]
     await asyncio.gather(*tasks)
+
+
+async def crawl_mirror(session, base_url):
+    results = []
+    skipped = []
+    html = await fetch(session, base_url)
+    ls   = links(html, base_url)
+    tasks = [
+        crawl_distro(session, dirname(l), l, results, skipped)
+        for l in ls if l.endswith("/") and dirname(l) in DISTROS
+    ]
+    await asyncio.gather(*tasks)
+
+    results.sort(key=lambda e: e.name)
+    return [e.__dict__ for e in results], skipped
 
 
 async def main():
@@ -196,21 +248,37 @@ async def main():
     connector = aiohttp.TCPConnector(limit=20)
     timeout   = aiohttp.ClientTimeout(total=3600, sock_read=60)
 
-    results = []
+    failed = []
     async with aiohttp.ClientSession(connector=connector, timeout=timeout, headers=headers) as session:
-        print("=== Crawling LXC index ===")
-        html = await fetch(session, BASE_URL)
-        ls   = links(html, BASE_URL)
-        tasks = [
-            crawl_distro(session, dirname(l), l, results)
-            for l in ls if l.endswith("/") and dirname(l) in DISTROS
-        ]
-        await asyncio.gather(*tasks)
+        for key, (base_url, out_files) in MIRRORS.items():
+            print(f"=== Crawling {key}: {base_url} ===")
+            try:
+                payload, skipped = await crawl_mirror(session, base_url)
+            except Exception as exc:
+                print(f"!!! {key} failed, keeping existing files: {exc}")
+                failed.append(key)
+                continue
 
-    results.sort(key=lambda e: e.name)
-    payload = [e.__dict__ for e in results]
-    JSON_OUT.write_text(json.dumps(payload, indent=2) + "\n")
-    print(f"\n=== Done. rootfs.json written with {len(payload)} entries ===")
+            if not payload:
+                print(f"!!! {key} returned no entries, keeping existing files")
+                failed.append(key)
+                continue
+
+            if skipped:
+                print(f"    {len(skipped)} flavor dirs skipped (no complete snapshot):")
+                for s in skipped[:10]:
+                    print(f"      - {s}")
+                if len(skipped) > 10:
+                    print(f"      ... and {len(skipped) - 10} more")
+
+            body = json.dumps(payload, indent=2) + "\n"
+            for out in out_files:
+                Path(out).write_text(body, encoding="utf-8")
+            print(f"--- {key}: {len(payload)} entries -> {', '.join(out_files)}")
+
+    if failed:
+        raise SystemExit(f"\n=== Incomplete. Mirrors failed: {', '.join(failed)} ===")
+    print("\n=== Done. All manifests written ===")
 
 
 if __name__ == "__main__":
