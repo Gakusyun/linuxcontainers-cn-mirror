@@ -26,10 +26,10 @@
     "author": "linuxcontainers",
     "distro": "ALT Linux",
     "description": "Official LXC container image for ALT Linux p11",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alt/p11/amd64/default/20261118_01%3A17/rootfs.tar.xz",
-    "sha256": "c29aeaa65551833035f779a61d21194d5fb305e2610b637e869f250fa15d540f",
-    "size_bytes": 231206864,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alt/p11/arm64/default/20261118_01%3A17/rootfs.tar.xz",
+    "sha256": "5f439134674ff712ca8611314fd495c606a1e8dc5650b498361df4cf3d1f2349",
+    "size_bytes": 172956388,
     "build_date": "20261118"
   },
   {
@@ -37,10 +37,10 @@
     "author": "linuxcontainers",
     "distro": "ALT Linux",
     "description": "Official LXC container image for ALT Linux p11",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alt/p11/arm64/default/20261118_01%3A17/rootfs.tar.xz",
-    "sha256": "5f439134674ff712ca8611314fd495c606a1e8dc5650b498361df4cf3d1f2349",
-    "size_bytes": 172956388,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alt/p11/amd64/default/20261118_01%3A17/rootfs.tar.xz",
+    "sha256": "c29aeaa65551833035f779a61d21194d5fb305e2610b637e869f250fa15d540f",
+    "size_bytes": 231206864,
     "build_date": "20261118"
   },
   {
@@ -70,10 +70,10 @@
     "author": "linuxcontainers",
     "distro": "AlmaLinux",
     "description": "Official LXC container image for AlmaLinux 8",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/almalinux/8/amd64/default/20261117_23%3A08/rootfs.tar.xz",
-    "sha256": "bb4b94bccc0553b7cf7e662dba163974539fb4d5efe981f9532c7f722815550b",
-    "size_bytes": 115507852,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/almalinux/8/arm64/default/20261117_23%3A08/rootfs.tar.xz",
+    "sha256": "dd06be280e2101215d5ba6be369f63514b9443087aa621da792206f028060cb7",
+    "size_bytes": 111707076,
     "build_date": "20261117"
   },
   {
@@ -81,10 +81,10 @@
     "author": "linuxcontainers",
     "distro": "AlmaLinux",
     "description": "Official LXC container image for AlmaLinux 8",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/almalinux/8/arm64/default/20261117_23%3A08/rootfs.tar.xz",
-    "sha256": "dd06be280e2101215d5ba6be369f63514b9443087aa621da792206f028060cb7",
-    "size_bytes": 111707076,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/almalinux/8/amd64/default/20261117_23%3A08/rootfs.tar.xz",
+    "sha256": "bb4b94bccc0553b7cf7e662dba163974539fb4d5efe981f9532c7f722815550b",
+    "size_bytes": 115507852,
     "build_date": "20261117"
   },
   {
@@ -125,10 +125,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.21",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/arm64/default/20261109_13%3A01/rootfs.tar.xz",
-    "sha256": "b41ee289890ca331a96a630d6d912417b04ac2e9e46482afc86bc5bb8c5a7493",
-    "size_bytes": 3480936,
+    "architecture": "armhf",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/armhf/default/20261109_13%3A00/rootfs.tar.xz",
+    "sha256": "b3c07d9bceefead745c8d094d45e4d40aacfbc4233ebfe224ddd6e09ec857e21",
+    "size_bytes": 2888856,
     "build_date": "20261109"
   },
   {
@@ -136,10 +136,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.21",
-    "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/armhf/default/20261109_13%3A00/rootfs.tar.xz",
-    "sha256": "b3c07d9bceefead745c8d094d45e4d40aacfbc4233ebfe224ddd6e09ec857e21",
-    "size_bytes": 2888856,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/arm64/default/20261109_13%3A01/rootfs.tar.xz",
+    "sha256": "b41ee289890ca331a96a630d6d912417b04ac2e9e46482afc86bc5bb8c5a7493",
+    "size_bytes": 3480936,
     "build_date": "20261109"
   },
   {
@@ -158,17 +158,6 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.21 (tinycloud)",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/arm64/tinycloud/20261109_13%3A00/rootfs.tar.xz",
-    "sha256": "e46901abdd45138c21b6032fbdad5cde912b386bdab0fdfaecbe380deb0c8bcc",
-    "size_bytes": 4802900,
-    "build_date": "20261109"
-  },
-  {
-    "name": "Alpine Linux 3.21 (tinycloud)",
-    "author": "linuxcontainers",
-    "distro": "Alpine Linux",
-    "description": "Official LXC container image for Alpine Linux 3.21 (tinycloud)",
     "architecture": "armhf",
     "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/armhf/tinycloud/20261109_13%3A00/rootfs.tar.xz",
     "sha256": "8a5683f3ee4d9aef58dfacf43554cdd2034d19c6e0c247d5af148cf4e9fac99b",
@@ -176,15 +165,15 @@
     "build_date": "20261109"
   },
   {
-    "name": "Alpine Linux 3.22",
+    "name": "Alpine Linux 3.21 (tinycloud)",
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
-    "description": "Official LXC container image for Alpine Linux 3.22",
-    "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/armhf/default/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "e4aabc38f53dffe1fd8612309904236119c28a34e8edf342a106a0d3d7383acc",
-    "size_bytes": 2990768,
-    "build_date": "20261117"
+    "description": "Official LXC container image for Alpine Linux 3.21 (tinycloud)",
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.21/arm64/tinycloud/20261109_13%3A00/rootfs.tar.xz",
+    "sha256": "e46901abdd45138c21b6032fbdad5cde912b386bdab0fdfaecbe380deb0c8bcc",
+    "size_bytes": 4802900,
+    "build_date": "20261109"
   },
   {
     "name": "Alpine Linux 3.22",
@@ -195,6 +184,17 @@
     "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/amd64/default/20261117_13%3A00/rootfs.tar.xz",
     "sha256": "66d989c1a98233ccbb2b44a55016fef7bc90b1750207190c2c7559bb1a674d17",
     "size_bytes": 3400160,
+    "build_date": "20261117"
+  },
+  {
+    "name": "Alpine Linux 3.22",
+    "author": "linuxcontainers",
+    "distro": "Alpine Linux",
+    "description": "Official LXC container image for Alpine Linux 3.22",
+    "architecture": "armhf",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/armhf/default/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "e4aabc38f53dffe1fd8612309904236119c28a34e8edf342a106a0d3d7383acc",
+    "size_bytes": 2990768,
     "build_date": "20261117"
   },
   {
@@ -224,10 +224,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.22 (tinycloud)",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/arm64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "c9b2e827c9668ba49b7af01b714f56bcd12d337c89a1de7b1eeb4014ea518184",
-    "size_bytes": 4982824,
+    "architecture": "armhf",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/armhf/tinycloud/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "81cea83ed9ddcc56a303d86bfd0a78b68248dce8432b7f34caa35f3e50e04435",
+    "size_bytes": 4337336,
     "build_date": "20261117"
   },
   {
@@ -235,10 +235,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.22 (tinycloud)",
-    "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/armhf/tinycloud/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "81cea83ed9ddcc56a303d86bfd0a78b68248dce8432b7f34caa35f3e50e04435",
-    "size_bytes": 4337336,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.22/arm64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "c9b2e827c9668ba49b7af01b714f56bcd12d337c89a1de7b1eeb4014ea518184",
+    "size_bytes": 4982824,
     "build_date": "20261117"
   },
   {
@@ -279,10 +279,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.23 (tinycloud)",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.23/amd64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "c2106939ff25ddfdc771fd9362a15c7df0b52255ba93612c7260b80ee8f6579e",
-    "size_bytes": 4961872,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.23/arm64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "b7283c6f48d8d5e22f3bc4f4a03c117757b7f965394011ba7b6c9f6d68ec2e6e",
+    "size_bytes": 5037128,
     "build_date": "20261117"
   },
   {
@@ -290,10 +290,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux 3.23 (tinycloud)",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.23/arm64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "b7283c6f48d8d5e22f3bc4f4a03c117757b7f965394011ba7b6c9f6d68ec2e6e",
-    "size_bytes": 5037128,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/3.23/amd64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "c2106939ff25ddfdc771fd9362a15c7df0b52255ba93612c7260b80ee8f6579e",
+    "size_bytes": 4961872,
     "build_date": "20261117"
   },
   {
@@ -378,10 +378,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux edge",
-    "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/armhf/default/20261117_13%3A02/rootfs.tar.xz",
-    "sha256": "a2c360cf6533fd7cc0a079faa2fa8f7b48c98e68ee96213c0f3b3f3625f4e286",
-    "size_bytes": 3057696,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/amd64/default/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "b6281ec6a33d20edd328cd82c5247481d9324fb9609c064db3dac2e26c34bee5",
+    "size_bytes": 3467684,
     "build_date": "20261117"
   },
   {
@@ -389,10 +389,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux edge",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/amd64/default/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "b6281ec6a33d20edd328cd82c5247481d9324fb9609c064db3dac2e26c34bee5",
-    "size_bytes": 3467684,
+    "architecture": "armhf",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/armhf/default/20261117_13%3A02/rootfs.tar.xz",
+    "sha256": "a2c360cf6533fd7cc0a079faa2fa8f7b48c98e68ee96213c0f3b3f3625f4e286",
+    "size_bytes": 3057696,
     "build_date": "20261117"
   },
   {
@@ -422,10 +422,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux edge (tinycloud)",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/arm64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "0ce8e6ba89ddf7623c82cfd644879d642c233d25f2d253460b3606aa40cb272d",
-    "size_bytes": 5092856,
+    "architecture": "armhf",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/armhf/tinycloud/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "8a9807da38ab56f695dfb0700561f2e16100fd8ceff081937a3be2ce98e045cb",
+    "size_bytes": 4453968,
     "build_date": "20261117"
   },
   {
@@ -433,10 +433,10 @@
     "author": "linuxcontainers",
     "distro": "Alpine Linux",
     "description": "Official LXC container image for Alpine Linux edge (tinycloud)",
-    "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/armhf/tinycloud/20261117_13%3A00/rootfs.tar.xz",
-    "sha256": "8a9807da38ab56f695dfb0700561f2e16100fd8ceff081937a3be2ce98e045cb",
-    "size_bytes": 4453968,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/alpine/edge/arm64/tinycloud/20261117_13%3A00/rootfs.tar.xz",
+    "sha256": "0ce8e6ba89ddf7623c82cfd644879d642c233d25f2d253460b3606aa40cb272d",
+    "size_bytes": 5092856,
     "build_date": "20261117"
   },
   {
@@ -445,10 +445,10 @@
     "distro": "Amazon Linux",
     "description": "Official LXC container image for Amazon Linux 2023",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/amazonlinux/2023/amd64/default/20261117_05%3A09/rootfs.tar.xz",
-    "sha256": "d2c96b3bc7a56cfb2dc8942e7cb0263d465b3ed664d21ec6c6951e46ec4663f0",
-    "size_bytes": 59826228,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/amazonlinux/2023/amd64/default/20261118_05%3A09/rootfs.tar.xz",
+    "sha256": "c26d48fbc719d13276883540b1d325cc21cceb2d2fd6f7a3c6ba1aff1f48ba73",
+    "size_bytes": 59822360,
+    "build_date": "20261118"
   },
   {
     "name": "Arch Linux current",
@@ -456,10 +456,10 @@
     "distro": "Arch Linux",
     "description": "Official LXC container image for Arch Linux current",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/archlinux/current/amd64/default/20261117_04%3A18/rootfs.tar.xz",
-    "sha256": "340728c91b250ef1c72670545941e822a08a82fb9fcf59ccc5a1ef6fe584f2b0",
-    "size_bytes": 187621696,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/archlinux/current/amd64/default/20261118_04%3A18/rootfs.tar.xz",
+    "sha256": "86143419a8e66b472d3050e8f6b2700f35477cda17c09c946ac5b2b57324bed1",
+    "size_bytes": 187631924,
+    "build_date": "20261118"
   },
   {
     "name": "Arch Linux current",
@@ -467,10 +467,10 @@
     "distro": "Arch Linux",
     "description": "Official LXC container image for Arch Linux current",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/archlinux/current/arm64/default/20261117_04%3A18/rootfs.tar.xz",
-    "sha256": "1b2a10de7d802d715b1cb014a25594eaab0f1806017b43ad8720bb38059fa6a1",
-    "size_bytes": 178739156,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/archlinux/current/arm64/default/20261118_04%3A18/rootfs.tar.xz",
+    "sha256": "38a9698a1d13e20c2cb11990e75d9213aef38f01da766c84f7e74b6654d3da91",
+    "size_bytes": 178736128,
+    "build_date": "20261118"
   },
   {
     "name": "BusyBox 1.38.0",
@@ -478,10 +478,10 @@
     "distro": "BusyBox",
     "description": "Official LXC container image for BusyBox 1.38.0",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/busybox/1.38.0/amd64/default/20261117_06%3A00/rootfs.tar.xz",
-    "sha256": "cb5840d9fc6553f8e3716bf6cd62c07f66cc464896d218eb411df32585b6dca5",
-    "size_bytes": 1083272,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/busybox/1.38.0/amd64/default/20261118_06%3A00/rootfs.tar.xz",
+    "sha256": "7a363aa340c266798278257e02d35e7bbf208781f8a308b4fcfc249c931778bc",
+    "size_bytes": 1083144,
+    "build_date": "20261118"
   },
   {
     "name": "BusyBox 1.38.0",
@@ -489,10 +489,10 @@
     "distro": "BusyBox",
     "description": "Official LXC container image for BusyBox 1.38.0",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/busybox/1.38.0/arm64/default/20261117_06%3A00/rootfs.tar.xz",
-    "sha256": "616927d6fcf0577864e50227de69bec602b28aa46f4edfcafc9c69274ec0d278",
-    "size_bytes": 945432,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/busybox/1.38.0/arm64/default/20261118_06%3A00/rootfs.tar.xz",
+    "sha256": "ac3f02ad5d71d8e08ce531580f60f212f3f48527c3e628e427c68487d10df7a7",
+    "size_bytes": 945904,
+    "build_date": "20261118"
   },
   {
     "name": "CentOS 10-Stream",
@@ -544,10 +544,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux bookworm",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/bookworm/amd64/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "e28e2bdaef74a101d0a6801de17b5b2a086564c2858311e055e17a587bf66437",
-    "size_bytes": 98717192,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/bookworm/amd64/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "87bfd15a232ba2568d21c94d41767aebce0901914bbffc7930c35b211cd189a4",
+    "size_bytes": 98728488,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux bookworm",
@@ -555,10 +555,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux bookworm",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/bookworm/arm64/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "125416b51b1272db7abd932bc7cc5f286fd29a190cb5a1b18460500f5448d5fc",
-    "size_bytes": 95026816,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/bookworm/arm64/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "63009f7550f4a2a978b37e5160a37c524847fd46041ecf251d1f56f835df344e",
+    "size_bytes": 95005828,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux bookworm",
@@ -566,10 +566,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux bookworm",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/bookworm/armhf/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "cd5a4c27717a32c2c24762a0b08bcfdf4612653433b9d18a13e2737621b2410c",
-    "size_bytes": 79459268,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/bookworm/armhf/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "83fd8d4cf0e06df2a9fc018afa5fa00bc926b9df8f8facb5a0f290920480bbc7",
+    "size_bytes": 79476100,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux forky",
@@ -577,10 +577,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux forky",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/forky/amd64/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "164f30d4aa220209baa93a6ce80c346dd6930928e220d96bfb8c9cfbb7f77bf0",
-    "size_bytes": 93725720,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/forky/amd64/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "c2cc91f3940c34ac5448546b5b1ead86a270677e321c947f1e865b88c81b10bd",
+    "size_bytes": 93749032,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux forky",
@@ -588,10 +588,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux forky",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/forky/arm64/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "d14784da541d6d96b2abc1bebb55cf75109d2b2694f74dbf6f1824ee4c819470",
-    "size_bytes": 89468808,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/forky/arm64/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "79ab543ddb4ccb45a4ebab8cf163fe6f54bde2f343884bf16eabc91d7da6b313",
+    "size_bytes": 89471200,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux forky",
@@ -599,21 +599,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux forky",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/forky/armhf/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "e7960894ef1b28f004929997ae50397d89e29bfe4cb0324d72cf924201b48d7a",
-    "size_bytes": 83095140,
-    "build_date": "20261117"
-  },
-  {
-    "name": "Debian GNU/Linux trixie",
-    "author": "linuxcontainers",
-    "distro": "Debian GNU/Linux",
-    "description": "Official LXC container image for Debian GNU/Linux trixie",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/trixie/arm64/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "6a5cc45b732de17e4ae1c90097694d01cba7fb0740208ba7fea403703b70a582",
-    "size_bytes": 90401152,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/forky/armhf/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "bca24fdffcbfa1f17e277b24f27877bbce7ff5252d380d01c85390fe515b73de",
+    "size_bytes": 83073544,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux trixie",
@@ -621,10 +610,21 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux trixie",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/trixie/amd64/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "b29a10d643d1ef398e35a0cf23965343361ffe96803efb2420a21c618a0c32db",
-    "size_bytes": 93189852,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/trixie/amd64/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "93f62a2e324d1a7e8514a12738f48d1461fdf6bf07ff244846648ada5b1a783a",
+    "size_bytes": 93181844,
+    "build_date": "20261118"
+  },
+  {
+    "name": "Debian GNU/Linux trixie",
+    "author": "linuxcontainers",
+    "distro": "Debian GNU/Linux",
+    "description": "Official LXC container image for Debian GNU/Linux trixie",
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/trixie/arm64/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "a9ae0ee8503cfa8787d21d35892ec3f74f1c457f570367d92ba090e8f263628c",
+    "size_bytes": 90411532,
+    "build_date": "20261118"
   },
   {
     "name": "Debian GNU/Linux trixie",
@@ -632,10 +632,10 @@
     "distro": "Debian GNU/Linux",
     "description": "Official LXC container image for Debian GNU/Linux trixie",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/trixie/armhf/default/20261117_05%3A24/rootfs.tar.xz",
-    "sha256": "ccb9e92d3be681ef92fefb1dcaac1a9df60b9dc0fa2e1c95139c76f7c05e4a43",
-    "size_bytes": 83604428,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/debian/trixie/armhf/default/20261118_05%3A24/rootfs.tar.xz",
+    "sha256": "df25ae208f5230eef75f00065ff8412070585ed265228a9b5faeafd1b0e839d0",
+    "size_bytes": 83593048,
+    "build_date": "20261118"
   },
   {
     "name": "Devuan daedalus",
@@ -796,10 +796,10 @@
     "author": "linuxcontainers",
     "distro": "Kali Linux",
     "description": "Official LXC container image for Kali Linux current",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/kali/current/arm64/default/20261117_17%3A14/rootfs.tar.xz",
-    "sha256": "dab168c99691ba4743778d3b5d5a98e377543f15fbc7d8152d4a271ccc718346",
-    "size_bytes": 77745804,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/kali/current/amd64/default/20261117_17%3A14/rootfs.tar.xz",
+    "sha256": "5d122a62a1a5f409606ea2d3375b9cfdc7f2cd8a286bf7e14e64334d74ccaa48",
+    "size_bytes": 81988288,
     "build_date": "20261117"
   },
   {
@@ -807,10 +807,10 @@
     "author": "linuxcontainers",
     "distro": "Kali Linux",
     "description": "Official LXC container image for Kali Linux current",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/kali/current/amd64/default/20261117_17%3A14/rootfs.tar.xz",
-    "sha256": "5d122a62a1a5f409606ea2d3375b9cfdc7f2cd8a286bf7e14e64334d74ccaa48",
-    "size_bytes": 81988288,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/kali/current/arm64/default/20261117_17%3A14/rootfs.tar.xz",
+    "sha256": "dab168c99691ba4743778d3b5d5a98e377543f15fbc7d8152d4a271ccc718346",
+    "size_bytes": 77745804,
     "build_date": "20261117"
   },
   {
@@ -819,10 +819,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint vanessa",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/vanessa/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "eacd5140b568f91a35e24dfb4149b16beb61561e884e7670d4e80a02c3780793",
-    "size_bytes": 249782644,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/vanessa/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "d79f1b287b6a24195b86f596c60eb742428d29afbc9338fcba2e9ca986894171",
+    "size_bytes": 249775328,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint vera",
@@ -830,10 +830,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint vera",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/vera/amd64/default/20261117_08%3A52/rootfs.tar.xz",
-    "sha256": "97c03a3134296861dd80668f5ca55befd6f6a3e4ee004c7399fab8db228c0428",
-    "size_bytes": 250332088,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/vera/amd64/default/20261118_09%3A01/rootfs.tar.xz",
+    "sha256": "08e680e99df54918a0888721b1bb5471d8b406feda96339ca596211702b2ea3d",
+    "size_bytes": 249893032,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint victoria",
@@ -841,10 +841,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint victoria",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/victoria/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "9704057407213e16701ebf4e0d83b3fd0d0eb8d24064603d2473779e2625c1dd",
-    "size_bytes": 249921532,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/victoria/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "ed490e9af720d11c160d9676a10fc10ace92ec4e9f97f235ec39886ee538e494",
+    "size_bytes": 250283412,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint virginia",
@@ -852,10 +852,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint virginia",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/virginia/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "59fa4644e853e0ca6ffdb3d7ce22bca2796d98905835352db2fe9d7bc58d7508",
-    "size_bytes": 249963056,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/virginia/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "926a5a449b53af86f073e7484d427a1f1912c44de0dd891a784cacdb77c75c4b",
+    "size_bytes": 249985632,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint wilma",
@@ -863,10 +863,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint wilma",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/wilma/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "6ca9ec2252e3a4495124979cb98ccbde6b98137fbe9bdcdd5c768c401c61d3bf",
-    "size_bytes": 137419416,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/wilma/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "56cd18010eaa3535049681288df5c570f393e56658b6d90330ea7c53d855b4d1",
+    "size_bytes": 137663808,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint xia",
@@ -874,10 +874,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint xia",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/xia/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "68fa114ac884b54758f4dfe508d237deb510c27f870530eeb2191d72a6125ac6",
-    "size_bytes": 137437572,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/xia/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "a76bdaea50a4874b1e1da6fa12db0496116f8237e678c1dc4d2f9b67d5df4fff",
+    "size_bytes": 137661552,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint zara",
@@ -885,10 +885,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint zara",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/zara/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "101e7227ec6bbcbb60ce3d8c5fb1ca2be86b29e6603da07b8b16fa1b370c8424",
-    "size_bytes": 137439264,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/zara/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "6e4e0c7cb7fd0d77cd2cb339c7d424e2fba1675d210ae9dbc7e70fb052299acd",
+    "size_bytes": 137686448,
+    "build_date": "20261118"
   },
   {
     "name": "Linux Mint zena",
@@ -896,10 +896,10 @@
     "distro": "Linux Mint",
     "description": "Official LXC container image for Linux Mint zena",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/zena/amd64/default/20261117_08%3A51/rootfs.tar.xz",
-    "sha256": "13ceadeaf4d7d7961104c8b9185567933ea423746c89316599b499d10ef20d46",
-    "size_bytes": 137425696,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/mint/zena/amd64/default/20261118_08%3A51/rootfs.tar.xz",
+    "sha256": "36cbcda5c6f3deed803a7dfa9ee0b04d49ab0b10555eeadc85bfc3ffaa3e884d",
+    "size_bytes": 137681032,
+    "build_date": "20261118"
   },
   {
     "name": "OpenWrt 25.12",
@@ -994,10 +994,10 @@
     "author": "linuxcontainers",
     "distro": "Oracle Linux",
     "description": "Official LXC container image for Oracle Linux 9",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/oracle/9/arm64/default/20261112_09%3A02/rootfs.tar.xz",
-    "sha256": "d0ea2f6e437b4874b8abf16fd44a774362ef3420715c88674b6134bd7ec9765e",
-    "size_bytes": 91154324,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/oracle/9/amd64/default/20261112_09%3A02/rootfs.tar.xz",
+    "sha256": "5aaf89b280af8668511244aa9eda498e09361eff8adcbb1c674c0c15cbb4b3d1",
+    "size_bytes": 94906676,
     "build_date": "20261112"
   },
   {
@@ -1005,10 +1005,10 @@
     "author": "linuxcontainers",
     "distro": "Oracle Linux",
     "description": "Official LXC container image for Oracle Linux 9",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/oracle/9/amd64/default/20261112_09%3A02/rootfs.tar.xz",
-    "sha256": "5aaf89b280af8668511244aa9eda498e09361eff8adcbb1c674c0c15cbb4b3d1",
-    "size_bytes": 94906676,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/oracle/9/arm64/default/20261112_09%3A02/rootfs.tar.xz",
+    "sha256": "d0ea2f6e437b4874b8abf16fd44a774362ef3420715c88674b6134bd7ec9765e",
+    "size_bytes": 91154324,
     "build_date": "20261112"
   },
   {
@@ -1038,10 +1038,10 @@
     "author": "linuxcontainers",
     "distro": "Rocky Linux",
     "description": "Official LXC container image for Rocky Linux 8",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/rockylinux/8/amd64/default/20261118_02%3A06/rootfs.tar.xz",
-    "sha256": "95e215dbb0449594bd9186964bb58a090bc6db38e8a9dd0e2fa33bca35b682d6",
-    "size_bytes": 115491132,
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/rockylinux/8/arm64/default/20261118_02%3A06/rootfs.tar.xz",
+    "sha256": "7f24593a9981e176aaa8e013098e8b75f9b39a2790afbc5e94fb8b0b8bd991ea",
+    "size_bytes": 111772320,
     "build_date": "20261118"
   },
   {
@@ -1049,10 +1049,10 @@
     "author": "linuxcontainers",
     "distro": "Rocky Linux",
     "description": "Official LXC container image for Rocky Linux 8",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/rockylinux/8/arm64/default/20261118_02%3A06/rootfs.tar.xz",
-    "sha256": "7f24593a9981e176aaa8e013098e8b75f9b39a2790afbc5e94fb8b0b8bd991ea",
-    "size_bytes": 111772320,
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/rockylinux/8/amd64/default/20261118_02%3A06/rootfs.tar.xz",
+    "sha256": "95e215dbb0449594bd9186964bb58a090bc6db38e8a9dd0e2fa33bca35b682d6",
+    "size_bytes": 115491132,
     "build_date": "20261118"
   },
   {
@@ -1105,10 +1105,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu jammy",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/jammy/amd64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "980011c7010bc982cb895e01e2f159c5365780a2d9e23bda2c18475289043d98",
-    "size_bytes": 136721120,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/jammy/amd64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "9ff0ff4973b0f2b48439a6f8061406d255616d67ab640f1206bbd5deae3f1abf",
+    "size_bytes": 136502956,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu jammy",
@@ -1116,10 +1116,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu jammy",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/jammy/arm64/default/20261117_07%3A53/rootfs.tar.xz",
-    "sha256": "daf8113eda28cfc8baf876af210c99102648feefbf72200a7b98dea86e7af486",
-    "size_bytes": 132414668,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/jammy/arm64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "27e2d2d1618be17f742e4f0a9f39cb9efa7f89929dda8c691cf56513caf6c6c1",
+    "size_bytes": 132403564,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu jammy",
@@ -1127,21 +1127,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu jammy",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/jammy/armhf/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "013c156636eabc932d7c6bba9928d5d76feea0a192de49a8d169b10cf3017b14",
-    "size_bytes": 112628748,
-    "build_date": "20261117"
-  },
-  {
-    "name": "Ubuntu noble",
-    "author": "linuxcontainers",
-    "distro": "Ubuntu",
-    "description": "Official LXC container image for Ubuntu noble",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/noble/amd64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "3a0fe7f1df9d817cb2ee0c84916a3e6ea9b343f8b6959a5a02bfe85a62d06b5c",
-    "size_bytes": 130001416,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/jammy/armhf/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "712a7217bfb1bd63f4e2feececc4d851fdb9a26493772fcd64c181d01fcf46e8",
+    "size_bytes": 112624288,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu noble",
@@ -1149,10 +1138,21 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu noble",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/noble/arm64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "a51cea87ba120b5fefae6a02f4da16a57264764bf444049788f69e1ed9130b52",
-    "size_bytes": 128548928,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/noble/arm64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "45cc6adf191d9b9b4aad77d14a99d215cac56fd2455f571b9521f49e9a4b1440",
+    "size_bytes": 128222892,
+    "build_date": "20261118"
+  },
+  {
+    "name": "Ubuntu noble",
+    "author": "linuxcontainers",
+    "distro": "Ubuntu",
+    "description": "Official LXC container image for Ubuntu noble",
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/noble/amd64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "b371f2096f0513fe52350a37030e21dace84400d70fafba350409ed0a159828b",
+    "size_bytes": 130016580,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu noble",
@@ -1160,21 +1160,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu noble",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/noble/armhf/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "94420d3758081bfd7eac7ae1418da3af940e23b5e4863d8e44be4dd1549be0b7",
-    "size_bytes": 117689552,
-    "build_date": "20261117"
-  },
-  {
-    "name": "Ubuntu resolute",
-    "author": "linuxcontainers",
-    "distro": "Ubuntu",
-    "description": "Official LXC container image for Ubuntu resolute",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/resolute/arm64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "ae64d3df87e56c84b8074233cdeec8afd3c24a972344efa600932e3d0bff63bc",
-    "size_bytes": 124791384,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/noble/armhf/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "433f4e66f1fdb912c2737f8b9d179a98d620f48de3dfb2f3e0d990a357b7108d",
+    "size_bytes": 117710016,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu resolute",
@@ -1182,10 +1171,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu resolute",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/resolute/amd64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "302883462b504ee682f95d117daf5ce92b5e385cedd93ecea8c87be91dd96af2",
-    "size_bytes": 128535056,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/resolute/amd64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "7c00b1dc396e7f12dbbfc9ad484f17aeb18190babd2f095a86966b727364b140",
+    "size_bytes": 128582304,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu resolute",
@@ -1193,10 +1182,21 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu resolute",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/resolute/armhf/default/20261117_08%3A08/rootfs.tar.xz",
-    "sha256": "0a8015e7635d5629f378271f14057cac0f65f4bfc0e9c45b44033183165ba01a",
-    "size_bytes": 119384476,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/resolute/armhf/default/20261118_08%3A08/rootfs.tar.xz",
+    "sha256": "28b5b73e07e094a88913355c7b7d5901df3ebd2b87aec296861ba29c0f172378",
+    "size_bytes": 119345660,
+    "build_date": "20261118"
+  },
+  {
+    "name": "Ubuntu resolute",
+    "author": "linuxcontainers",
+    "distro": "Ubuntu",
+    "description": "Official LXC container image for Ubuntu resolute",
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/resolute/arm64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "4fe153f5519f13f1a7ab850f3b8fbf08294af6ef39d085c59722d8dd71ef3e65",
+    "size_bytes": 124915640,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu stonking",
@@ -1204,10 +1204,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu stonking",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/stonking/amd64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "9e97569d687b0ece2e4111270bbc97c69db99f82c00649a236b7d8321413cbab",
-    "size_bytes": 124192696,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/stonking/amd64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "81871f5d3857a0fcaefc5df30aed1a83691d0016f0f6696749f98c2beaf9db33",
+    "size_bytes": 124216520,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu stonking",
@@ -1215,10 +1215,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu stonking",
     "architecture": "armhf",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/stonking/armhf/default/20261117_08%3A25/rootfs.tar.xz",
-    "sha256": "44947b49bb6019ffe888127558111ddb60bbad62842ddfc9657297bc1e4a30af",
-    "size_bytes": 116447784,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/stonking/armhf/default/20261118_08%3A27/rootfs.tar.xz",
+    "sha256": "6f2da3c5c08be9ea4f48f910ecd07523a3bd400ac928e2acb35988076acf8560",
+    "size_bytes": 116488880,
+    "build_date": "20261118"
   },
   {
     "name": "Ubuntu stonking",
@@ -1226,10 +1226,10 @@
     "distro": "Ubuntu",
     "description": "Official LXC container image for Ubuntu stonking",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/stonking/arm64/default/20261117_07%3A42/rootfs.tar.xz",
-    "sha256": "5e09d2939e5f074c3b2b85094dcd11c85cec511912536bff59703fe6701e58bb",
-    "size_bytes": 119294872,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/ubuntu/stonking/arm64/default/20261118_07%3A42/rootfs.tar.xz",
+    "sha256": "989a79136db3b2832f63ed6862c9edec50da0927dd80870120ecd5b3e86cf98d",
+    "size_bytes": 119269472,
+    "build_date": "20261118"
   },
   {
     "name": "Void Linux current",
@@ -1302,22 +1302,22 @@
     "author": "linuxcontainers",
     "distro": "openSUSE",
     "description": "Official LXC container image for openSUSE 16.0",
-    "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.0/amd64/default/20261117_04%3A20/rootfs.tar.xz",
-    "sha256": "ea01405358d077c644798051af0312f198a4421c9574844a57b16aaf4fab2dda",
-    "size_bytes": 42282800,
-    "build_date": "20261117"
+    "architecture": "aarch64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.0/arm64/default/20261118_04%3A20/rootfs.tar.xz",
+    "sha256": "b4e579988283d2452ba6f28f7cff94d2f051d83c6c4e2a9e60704ed43779b0bd",
+    "size_bytes": 39095300,
+    "build_date": "20261118"
   },
   {
     "name": "openSUSE 16.0",
     "author": "linuxcontainers",
     "distro": "openSUSE",
     "description": "Official LXC container image for openSUSE 16.0",
-    "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.0/arm64/default/20261117_04%3A20/rootfs.tar.xz",
-    "sha256": "5c576374aa31ed8dce931ede319817ed3edf994091eb1b2090c9b7088cca4121",
-    "size_bytes": 39112484,
-    "build_date": "20261117"
+    "architecture": "x86_64",
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.0/amd64/default/20261118_04%3A20/rootfs.tar.xz",
+    "sha256": "80515c872acc38473d71a475d9b28b6735f1aadf37c4f2ab834cbad6edfc7c2e",
+    "size_bytes": 42280472,
+    "build_date": "20261118"
   },
   {
     "name": "openSUSE 16.1",
@@ -1325,10 +1325,10 @@
     "distro": "openSUSE",
     "description": "Official LXC container image for openSUSE 16.1",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.1/arm64/default/20261117_04%3A20/rootfs.tar.xz",
-    "sha256": "c8e3a7eebf6b46755a78c9f581b8e780015230897d15b2b307cf5d8160a8be95",
-    "size_bytes": 39537132,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.1/arm64/default/20261118_04%3A20/rootfs.tar.xz",
+    "sha256": "0d1b4eb38d3dea859863ffc518e39d2fd41c8c4505d40285003c5d2cababe37f",
+    "size_bytes": 39534616,
+    "build_date": "20261118"
   },
   {
     "name": "openSUSE 16.1",
@@ -1336,10 +1336,10 @@
     "distro": "openSUSE",
     "description": "Official LXC container image for openSUSE 16.1",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.1/amd64/default/20261117_04%3A20/rootfs.tar.xz",
-    "sha256": "54c775f688395b75fef859adf930ebed783e9a949dfaa039e4ec494498f5ef67",
-    "size_bytes": 42331104,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/16.1/amd64/default/20261118_04%3A20/rootfs.tar.xz",
+    "sha256": "3fdd9ca21f5514ed741a0bbf69d673d2449396e3b1200fea6352fb295b41a1c5",
+    "size_bytes": 42324584,
+    "build_date": "20261118"
   },
   {
     "name": "openSUSE tumbleweed",
@@ -1347,10 +1347,10 @@
     "distro": "openSUSE",
     "description": "Official LXC container image for openSUSE tumbleweed",
     "architecture": "x86_64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/tumbleweed/amd64/default/20261117_04%3A20/rootfs.tar.xz",
-    "sha256": "691193250199828789808e71aaaa73ab644275523f119244d33bf9833374f970",
-    "size_bytes": 47754056,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/tumbleweed/amd64/default/20261118_04%3A20/rootfs.tar.xz",
+    "sha256": "c2ab88ea0174a78d636d26b912543648304d3fd8b2f62155ead9e4dfab7dee01",
+    "size_bytes": 47934304,
+    "build_date": "20261118"
   },
   {
     "name": "openSUSE tumbleweed",
@@ -1358,9 +1358,9 @@
     "distro": "openSUSE",
     "description": "Official LXC container image for openSUSE tumbleweed",
     "architecture": "aarch64",
-    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/tumbleweed/arm64/default/20261117_04%3A20/rootfs.tar.xz",
-    "sha256": "559924319ec4c488ba521bcf83cebdab49a2bb7e82c29bb0372074e271b85f8d",
-    "size_bytes": 42479796,
-    "build_date": "20261117"
+    "download_url": "https://mirrors.tuna.tsinghua.edu.cn/lxc-images/images/opensuse/tumbleweed/arm64/default/20261118_04%3A20/rootfs.tar.xz",
+    "sha256": "c6a2f58b249c2ebf39c95f898e69ac14b37a2da6002393c945966a19484925d4",
+    "size_bytes": 42654344,
+    "build_date": "20261118"
   }
 ]
